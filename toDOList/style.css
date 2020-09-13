@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+.toDoList {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+ul li {
+    cursor: pointer;
+    position: relative;
+    list-style-type: none; 
+    margin-bottom: 5px;     
+}
+label.checked {
+    text-decoration: line-through;
+}
+label {
+    cursor: pointer;
+}
+.closeBtn {
+    cursor: pointer;   
+    margin-left: 5px;
+}
+.editBtn {
+    cursor: pointer;    
+    margin-left: 5px;
+}
+.saveBtn {
+    cursor: pointer;    
+    margin-left: 5px;
+}
+.cancelBtn {
+    cursor: pointer;    
+    margin-left: 5px;
+}
+.listCreatorBtn {
+    cursor: pointer;
+}
