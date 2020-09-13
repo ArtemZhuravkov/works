@@ -11,6 +11,7 @@ export namespace Components {
     }
     interface ListItem {
         "todoList": TodoItem[];
+        "toggleEdit": boolean;
     }
     interface TodoCreator {
         "addTodoItem": (title: string) => void;
@@ -18,6 +19,7 @@ export namespace Components {
     }
     interface TodoItem {
         "description": any;
+        "toggleEdit": boolean;
     }
     interface TodoList {
     }
@@ -66,6 +68,7 @@ declare namespace LocalJSX {
     }
     interface ListItem {
         "todoList"?: TodoItem[];
+        "toggleEdit"?: boolean;
     }
     interface TodoCreator {
         "addTodoItem"?: (title: string) => void;
@@ -74,6 +77,7 @@ declare namespace LocalJSX {
     interface TodoItem {
         "description"?: any;
         "onChangeIsDone"?: (event: CustomEvent<any>) => void;
+        "toggleEdit"?: boolean;
     }
     interface TodoList {
     }
